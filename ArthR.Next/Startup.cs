@@ -12,7 +12,10 @@ namespace ArthR.Next
             services.AddSignalR();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        // intentionally breaking
+        // if I ever get back to this - see:
+        // https://weblogs.asp.net/ricardoperes/signalr-in-asp-net-core?WT.mc_id=DX_MVP4025064&utm_campaign=dotNET%20Weekly&utm_medium=email&utm_source=week__year_
+        public void Config ure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
